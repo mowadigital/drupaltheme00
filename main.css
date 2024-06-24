@@ -1,0 +1,204 @@
+
+@font-face {
+  font-family: "Suisse Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Light.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Book";
+  font-style: normal;
+  font-weight: 450;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Book.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Suisse SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Light.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Neue Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SuisseNeue/SuisseNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Condensed Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SuisseIntlCond/SuisseIntlCond-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/SuisseIntlCond/SuisseIntlCond-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Mono Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SuisseIntlMono/SuisseIntlMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Suisse Mono Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/SuisseIntlMono/SuisseIntlMono-Bold.ttf");
+}
+
+html {
+  background-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.15;
+  box-sizing: border-box;
+  font-family: "Suisse Book", Arial;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, input, li {
+  color: #000;
+}
+
+input {
+  outline: none;
+  border: 1px solid #000;
+  padding: 4px;
+  background: transparent;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+  height: 0;
+}
+
+.i000 {
+  position: relative;
+  overflow: hidden;
+}
+
+.i000::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 250%;
+  height: 250%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 55%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.i000:hover::before {
+  opacity: 0.35;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  z-index: 9;
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  padding: 16px 32px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.header > h1 {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Suisse Book";
+}
+
+.header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.header > nav > ul > li > a {
+  font-size: 16px;
+  font-family: "Suisse Book";
+}
+
+.header > nav > ul > li > a > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
