@@ -3,35 +3,134 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
-    <title>theme000</title>
+    <title>theme00</title>
     <link rel="stylesheet" type="text/css" href="./main.css" />
   </head>
   <body>
     <header class="header">
-      <h1>Mowa.nyc</h1>
+      <h2><a href="index.html">MOWA</a></h2>
       <nav>
         <ul>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Contact</a></li>
-          <li>
-            <a href="/">
-              <svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none">
-                  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.8171,4.16689c1.55585,1.55585 1.55585,4.07838 0,5.63423c-1.55585,1.55585 -4.07838,1.55585 -5.63423,0c-1.55585,-1.55585 -1.55585,-4.07838 -1.77636e-15,-5.63423c1.55585,-1.55585 4.07838,-1.55585 5.63423,-8.88178e-16"></path>
-                  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12,14.008c4.554,0 9,1.967 9,4.992v1c0,0.552 -0.448,1 -1,1h-16c-0.552,0 -1,-0.448 -1,-1v-1c0,-3.026 4.446,-4.992 9,-4.992"></path>
-                </g>
-              </svg>
-            </a>
-          </li>
+          <li class="i000"><a href="about.html">About</a></li>
+          <li class="i000"><a href="projects.html">Projects</a></li>
+          <li class="i000"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-
+      <section class="hero">
+        <h1>Welcome to MOWA</h1>
+      </section>
+      <section class="content">
+        <div>
+          <span>Who?</span>
+          <p>MOWA is a software agency based in New York, NY. We are a team of specialized consultants who have dedicated ourselves to simplifying the delivery of sophisticated web solutions.</p>
+        </div>
+        <div class="gallery">
+          <section class="carousel" id="carousel">
+            <ul>
+              <li>
+                <img src="./assets/img/carousel0.png" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel1.png" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel2.png" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel3.png" />
+              </li>
+            </ul>
+          </section>
+          <section class="navigation">
+            <ul id="carouselcontroller">
+              <li carouselvalue="0" active="true"></li>
+              <li carouselvalue="1" active="false"></li>
+              <li carouselvalue="2" active="false"></li>
+              <li carouselvalue="3" active="false"></li>
+            </ul>
+          </section>
+          <!--
+          <div>
+            <img class="imagetransform" value="-2" src="./assets/img/0.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="-1" src="./assets/img/1.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="-0.5" src="./assets/img/2.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="1" src="./assets/img/3.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="2" src="./assets/img/4.jpeg" />
+          </div>
+        </div>
+        -->
+        <!--
+        <div class="carousel">
+          <ul>
+            <li>
+              <img src="./assets/img/figma.png" style="transform: scale(60%)" />
+            </li>
+            <li>
+              <img src="./assets/img/amazon.png" style="transform: scale(75%)" />
+            </li>
+            <li>
+              <img src="./assets/img/microsoft.png" />
+            </li>
+            <li>
+              <img src="./assets/img/wordpress.png" />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./assets/img/figma.png" style="transform: scale(60%)" />
+            </li>
+            <li>
+              <img src="./assets/img/amazon.png" style="transform: scale(75%)" />
+            </li>
+            <li>
+              <img src="./assets/img/microsoft.png" />
+            </li>
+            <li>
+              <img src="./assets/img/wordpress.png" />
+            </li>
+          </ul>
+        </div>
+        -->
+      </section>
     </main>
     <footer class="footer">
-
+      <section class="footer-top">
+        <h2>MOWA</h2>
+        <span>Make an inquiry +</span>
+      </section>
+      <section class="footer-bottom">
+        <div class="footer-bottomleft">
+          <div class="footer-bottomleft-about">
+            <span>Philosophy</span>
+            <p>Different projects can have vastly differing requirements. The more accurately these requirements can be understood and met, the more efficient product delivery becomes.</p>
+          </div>
+          <span>&copy;MOWA 2024</span>
+        </div>
+        <div class="footer-bottomright">
+          <div class="footer-bottomright-contact">
+            <span>Contact</span>
+            <p>mowadigital@gmail.com<br />+1 000 000 0000</p>
+          </div>
+          <div class="footer-bottomright-socialmedia">
+            <span>Social Media</span>
+            <p><a href="#">Instagram</a>, <a href="#">Behance</a></p>
+          </div>
+          <div class="footer-bottomright-links">
+            <span>Directory</span>
+            <p><a href="#">Home</a>, <a href="#">About</a>, <a href="#">Projects</a>, <a href="#">Contact</a></p>
+          </div>
+        </div>
+      </section>
     </footer>
     <script src="./app.js"></script>
   </body>

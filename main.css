@@ -1,81 +1,39 @@
-
 @font-face {
-  font-family: "Suisse Light";
+  font-family: "Inter Light";
   font-style: normal;
   font-weight: 300;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Light.ttf");
+  src: url("./assets/fonts/Inter/Inter-Light.ttf");
 }
-
 @font-face {
-  font-family: "Suisse Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Suisse Book";
-  font-style: normal;
-  font-weight: 450;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Book.ttf");
-}
-
-@font-face {
-  font-family: "Suisse Medium";
-  font-style: normal;
-  font-weight: 500;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Suisse SemiBold";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Suisse Light";
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 300;
-  src: url("./assets/fonts/SuisseIntl/SuisseIntl-Light.ttf");
+  src: url("./assets/fonts/Inter/Inter-Regular.ttf");
 }
-
 @font-face {
-  font-family: "Suisse Neue Regular";
+  font-family: "Inter Medium";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "Inter SemiBold";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/Inter/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Instrument Serif Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/SuisseNeue/SuisseNeue-Regular.ttf");
+  src: url("./assets/fonts/InstrumentSerif/InstrumentSerif-Regular.ttf");
 }
-
 @font-face {
-  font-family: "Suisse Condensed Regular";
-  font-style: normal;
+  font-family: "Instrument Serif Italic";
+  font-style: italic;
   font-weight: 400;
-  src: url("./assets/fonts/SuisseIntlCond/SuisseIntlCond-Regular.ttf");
+  src: url("./assets/fonts/InstrumentSerif/InstrumentSerif-Italic.ttf");
 }
-
-@font-face {
-  font-family: "Suisse Condensed Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./assets/fonts/SuisseIntlCond/SuisseIntlCond-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Suisse Mono Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/SuisseIntlMono/SuisseIntlMono-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Suisse Mono Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./assets/fonts/SuisseIntlMono/SuisseIntlMono-Bold.ttf");
-}
-
 html {
   background-color: #fff;
 }
@@ -83,9 +41,9 @@ html {
 * {
   padding: 0;
   margin: 0;
-  line-height: 1.15;
+  line-height: 1.35;
   box-sizing: border-box;
-  font-family: "Suisse Book", Arial;
+  font-family: "Inter Medium", Arial;
   font-size: 16px;
 }
 
@@ -129,21 +87,16 @@ a {
   position: absolute;
   top: var(--y);
   left: var(--x);
-  width: 250%;
-  height: 250%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 55%);
+  width: 350%;
+  height: 350%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0) 55%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
 .i000:hover::before {
-  opacity: 0.35;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
+  opacity: 0.3;
 }
 
 .header {
@@ -166,18 +119,13 @@ a {
   overflow: hidden;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+.header > h2 {
+  flex: 1;
 }
 
-.header > h1 {
-  flex: 1;
-  font-size: 20px;
-  font-family: "Suisse Book";
+.header > h2 > a {
+  font-size: 18px;
+  font-family: "Inter Medium";
 }
 
 .header > nav > ul {
@@ -185,20 +133,432 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 32px;
+  gap: 4px;
+}
+
+.header > nav > ul > li {
+  padding: 8px 16px;
+  border-radius: 12px;
 }
 
 .header > nav > ul > li > a {
   font-size: 16px;
-  font-family: "Suisse Book";
+  font-family: "Inter Medium";
 }
 
-.header > nav > ul > li > a > svg {
-  width: 20px;
-  height: 20px;
-}
-
-.footer {
+.main {
   display: flex;
   flex-direction: column;
 }
+
+.main > .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 196px;
+}
+
+.main > .hero > h1 {
+  font-size: 96px;
+  font-family: "Instrument Serif Regular";
+}
+
+.main > .content {
+  background-color: #eee;
+  background: linear-gradient(to bottom right, #eee, #ddd);
+  border-radius: 32px;
+  margin: 128px 16px 0 16px;
+  padding: 128px 0 144px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+.main > .content > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.main > .content > div > span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Instrument Serif Regular";
+  font-size: 48px;
+}
+
+.main > .content > div > p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  padding-right: 20vw;
+  margin-top: 8px;
+  font-family: "Inter Regular";
+  font-size: 18px;
+  color: #777;
+}
+
+.main > .content > .gallery {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/1;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 32px;
+}
+
+.main > .content > .gallery > .carousel {
+  position: absolute;
+  -webkit-transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.main > .content > .gallery > .carousel > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.main > .content > .gallery > .carousel > ul > li {
+  width: 100%;
+  height: 100%;
+  flex: none;
+}
+
+.main > .content > .gallery > .carousel > ul > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main > .content > .gallery > .carousel > ul > li > img:nth-of-type(1) {
+  -webkit-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+
+.main > .content > .gallery > .navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 6px 8px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+}
+
+.main > .content > .gallery > .navigation > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main > .content > .gallery > .navigation > ul > li {
+  border-radius: 999px;
+  padding: 4px;
+  background-color: #888;
+  cursor: pointer;
+  -webkit-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
+}
+
+.main > .content > .gallery > .navigation > ul > li[active=true] {
+  background-color: #fff;
+}
+
+/*
+GALLERY VER. 1
+
+.main > .content > .gallery {
+  background: #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.main > .content > .gallery > div {
+  aspect-ratio: 1 / 1;
+  flex: none;
+  position: relative;
+  -webkit-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+}
+
+.main > .content > .gallery > div:nth-of-type(1) {
+  width: 16%;
+  transform: rotate(-17deg);
+}
+
+.main > .content > .gallery > div:nth-of-type(2) {
+  width: 24%;
+  transform: rotate(9deg)
+}
+
+.main > .content > .gallery > div:nth-of-type(3) {
+  width: 14%;
+  transform: rotate(-23deg);
+}
+
+.main > .content > .gallery > div:nth-of-type(4) {
+  width: 28%;
+  transform: rotate(-4deg);
+}
+
+.main > .content > .gallery > div:nth-of-type(5) {
+  width: 18%;
+  transform: rotate(15deg);
+}
+
+.main > .content > .gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8%;
+}
+*/
+/*
+CLIENT CAROUSEL
+
+.main > .content > .carousel {
+  position: relative;
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8vw 0;
+  overflow: hidden;
+}
+
+.main > .content > .carousel > ul {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 64px;
+  width: 100%;
+  animation: carousel0 20s linear infinite;
+}
+
+@keyframes carousel0 {
+  0% {
+    transform: translateX(0);
+  } 100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main > .content > .carousel > ul:nth-of-type(2) {
+  -webkit-transform: translateX(50vw);
+  transform: translateX(50vw);
+  animation: carousel1 20s linear infinite;
+}
+
+@keyframes carousel1 {
+  0% {
+    transform: translateX(100%);
+  } 100% {
+    transform: translateX(0%);
+  }
+}
+
+.main > .content > .carousel > ul > li {
+  flex: 1;
+}
+
+.main > .content > .carousel > ul > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%) brightness(0%);
+  filter: grayscale(100%) brightness(0%);
+}
+*/
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about > .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 196px;
+  margin-bottom: 128px;
+}
+
+.about > .hero > h2 {
+  font-size: 96px;
+  font-family: "Instrument Serif Regular";
+  width: 64vw;
+  text-align: center;
+}
+
+.about > .hero > h2 > a {
+  font-family: "Instrument Serif Italic";
+  font-size: inherit;
+  color: rgb(0, 0, 255);
+}
+
+.about > .hero > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.about > .hero > h2 > a:active {
+  color: rgb(255, 0, 0);
+}
+
+.footer {
+  background-color: #111;
+  border-radius: 32px;
+  margin: 16px;
+  padding: 32px 64px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 256px;
+}
+
+.footer > .footer-top > h2 {
+  font-size: 96px;
+  font-family: "Inter Medium";
+  color: #fff;
+  margin-left: -4px;
+}
+
+.footer > .footer-top > span {
+  font-size: 14px;
+  font-family: "Inter Medium";
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+.footer > .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  margin-bottom: 16px;
+}
+
+.footer > .footer-bottom > .footer-bottomleft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  justify-content: space-between;
+}
+
+.footer > .footer-bottom > .footer-bottomleft > .footer-bottomleft-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.footer > .footer-bottom > .footer-bottomleft > .footer-bottomleft-about > span {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer > .footer-bottom > .footer-bottomleft > .footer-bottomleft-about > p {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+  width: 400px;
+}
+
+.footer > .footer-bottom > .footer-bottomleft > span {
+  font-family: "Inter Medium";
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer > .footer-bottom > .footer-bottomright {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-contact,
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-socialmedia,
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-contact > span {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-contact > p {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-socialmedia > span {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-socialmedia > p {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-socialmedia > p > a {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-links > span {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-links > p {
+  font-size: 14px;
+  font-family: "Inter Light";
+  color: #fff;
+}
+
+.footer > .footer-bottom > .footer-bottomright > .footer-bottomright-links > p > a {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+/*# sourceMappingURL=main.css.map */
