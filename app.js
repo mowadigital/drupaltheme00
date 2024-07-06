@@ -30,6 +30,7 @@ document.addEventListener("mousemove", (e) => {
 })
 */
 
+/* About page carousel */
 function handleCarousel() {
   let carousel = document.getElementById("carousel")
   let tracker = 0
@@ -100,4 +101,20 @@ function handleCarousel() {
   })
 }
 
-handleCarousel()
+if (document.getElementById("carouselcontroller") == (null || undefined)) {
+  console.log("#carouselcontroller:", document.getElementById("carouselcontroller"))
+} else {
+  handleCarousel()
+}
+
+/* Home page project filters */
+document.addEventListener("click", (e) => {
+  if (!e.target.hasAttribute("filtervalue")) {
+    return
+  } else {
+    for (let i = 0; i < document.getElementById("filters").children.length; i++) {
+      document.getElementById("filters").children[i].setAttribute("active", "false")
+    }
+    e.target.setAttribute("active", "true")
+  }
+})

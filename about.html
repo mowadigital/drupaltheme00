@@ -8,48 +8,116 @@
   </head>
   <body>
     <header class="header">
-      <h2><a href="index.html">MOWA</a></h2>
+      <h2><a href="index.html">Mowa.nyc</a></h2>
       <nav>
         <ul>
-          <li class="i000"><a href="about.html">About</a></li>
-          <li class="i000"><a href="projects.html">Projects</a></li>
-          <li class="i000"><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="about">
       <section class="hero">
-        <h2>Here's a link to <a href="projects.html">our projects</a>, instead.</h2>
+        <h1>About MOWA</h1>
+      </section>
+      <section class="content">
+        <div>
+          <section>
+            <p>Who?</p>
+          </section>
+          <section>
+            <div>
+              <p>MOWA is a software agency based in New York, NY. We are a team of specialized consultants who have dedicated ourselves to simplifying the delivery of sophisticated web solutions.</p>
+            </div>
+          </section>
+        </div>
+        <div class="gallery">
+          <section class="carousel" id="carousel">
+            <ul>
+              <li>
+                <img src="./assets/img/carousel0.jpeg" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel1.jpeg" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel2.jpeg" />
+              </li>
+              <li>
+                <img src="./assets/img/carousel3.jpeg" />
+              </li>
+            </ul>
+          </section>
+          <section class="navigation">
+            <ul id="carouselcontroller">
+              <li carouselvalue="0" active="true"></li>
+              <li carouselvalue="1" active="false"></li>
+              <li carouselvalue="2" active="false"></li>
+              <li carouselvalue="3" active="false"></li>
+            </ul>
+          </section>
+          <!--
+          <div>
+            <img class="imagetransform" value="-2" src="./assets/img/0.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="-1" src="./assets/img/1.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="-0.5" src="./assets/img/2.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="1" src="./assets/img/3.jpeg" />
+          </div>
+          <div>
+            <img class="imagetransform" value="2" src="./assets/img/4.jpeg" />
+          </div>
+        </div>
+        -->
+        <!--
+        <div class="carousel">
+          <ul>
+            <li>
+              <img src="./assets/img/figma.png" style="transform: scale(60%)" />
+            </li>
+            <li>
+              <img src="./assets/img/amazon.png" style="transform: scale(75%)" />
+            </li>
+            <li>
+              <img src="./assets/img/microsoft.png" />
+            </li>
+            <li>
+              <img src="./assets/img/wordpress.png" />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./assets/img/figma.png" style="transform: scale(60%)" />
+            </li>
+            <li>
+              <img src="./assets/img/amazon.png" style="transform: scale(75%)" />
+            </li>
+            <li>
+              <img src="./assets/img/microsoft.png" />
+            </li>
+            <li>
+              <img src="./assets/img/wordpress.png" />
+            </li>
+          </ul>
+        </div>
+        -->
       </section>
     </main>
     <footer class="footer">
-      <section class="footer-top">
-        <h2>MOWA</h2>
-        <span>Make an inquiry +</span>
-      </section>
-      <section class="footer-bottom">
-        <div class="footer-bottomleft">
-          <div class="footer-bottomleft-about">
-            <span>Philosophy</span>
-            <p>Different projects can have vastly differing requirements. The more accurately these requirements can be understood and met, the more efficient product delivery becomes.</p>
-          </div>
-          <span>&copy;MOWA 2024</span>
-        </div>
-        <div class="footer-bottomright">
-          <div class="footer-bottomright-contact">
-            <span>Contact</span>
-            <p>mowadigital@gmail.com<br />+1 000 000 0000</p>
-          </div>
-          <div class="footer-bottomright-socialmedia">
-            <span>Social Media</span>
-            <p><a href="#">Instagram</a>, <a href="#">Behance</a></p>
-          </div>
-          <div class="footer-bottomright-links">
-            <span>Directory</span>
-            <p><a href="#">Home</a>, <a href="#">About</a>, <a href="#">Projects</a>, <a href="#">Contact</a></p>
-          </div>
-        </div>
-      </section>
+      <h2>MOWA</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>&copy;MOWA 2024</span>
     </footer>
     <script src="./app.js"></script>
   </body>
