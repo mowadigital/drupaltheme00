@@ -8,20 +8,21 @@
   </head>
   <body>
     <header class="header">
-      <h2><a href="index.html">Mowa.nyc</a></h2>
+      <h2><a href="#" data-link="home">Mowa.nyc</a></h2>
       <nav>
         <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#" data-link="about">About</a></li>
+          <li><a href="#" data-link="projects">Projects</a></li>
+          <li><a href="#" data-link="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main" id="home">
       <section class="hero">
         <h1>Welcome to MOWA</h1>
       </section>
-      <section class="about-single" id="about">
+      <section class="about-single">
+        <span class="marker" id="about"></span>
         <div class="summary">
           <section class="left">
             <p>Who?</p>
@@ -59,7 +60,8 @@
           </section>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects">
+        <span class="marker" id="projects"></span>
         <ul class="filters" id="filters">
           <li filtervalue="0" active="true">All</li>
           <li filtervalue="1" active="false">Development</li>
@@ -109,7 +111,8 @@
           </li>
         </ul>
       </section>
-      <section class="contact-single" id="contact">
+      <section class="contact-single">
+        <span class="marker" id="contact"></span>
         <div>
           <section>
             <p>Email</p>
@@ -160,10 +163,10 @@
     <footer class="footer">
       <h2>MOWA</h2>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#" data-link="home">Home</a></li>
+        <li><a href="#" data-link="about">About</a></li>
+        <li><a href="#" data-link="projects">Projects</a></li>
+        <li><a href="#" data-link="contact">Contact</a></li>
       </ul>
       <span>&copy;MOWA 2024</span>
     </footer>

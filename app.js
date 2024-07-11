@@ -118,3 +118,15 @@ document.addEventListener("click", (e) => {
     e.target.setAttribute("active", "true")
   }
 })
+
+document.addEventListener("click", (e) => {
+  if (e.target.hasAttribute("data-link")) {
+    e.preventDefault()
+
+    try {
+      document.getElementById(e.target.getAttribute("data-link")).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+    } catch(err) {
+      console.log(err)
+    }
+  }
+})

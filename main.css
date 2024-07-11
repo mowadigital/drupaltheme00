@@ -107,6 +107,27 @@ a {
   opacity: 0.3;
 }
 
+#home, #about, #projects, #contact {
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  top: 0;
+}
+
+.marker#about {
+  top: -128px;
+}
+
+.marker#projects {
+  top: -192px;
+}
+
+.marker#contact {
+  top: -128px;
+}
+
 .header {
   z-index: 9;
   position: fixed;
@@ -161,7 +182,7 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 128px;
 }
 
 .main > .hero {
@@ -180,10 +201,10 @@ a {
 
 .main > .projects {
   position: relative;
-  background-color: #eee;
+  background-color: #f4f4f4;
   border-radius: 32px;
   margin: 0 16px;
-  padding: 96px 64px;
+  padding: 64px 64px 96px 64px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -405,10 +426,10 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #eee;
+  background-color: #f4f4f4;
   border-radius: 32px;
   margin: 64px 16px 0 16px;
-  padding: 96px 0;
+  padding: 0 0 96px 0;
   gap: 96px;
 }
 
@@ -628,7 +649,7 @@ CLIENT CAROUSEL
 }
 */
 .contact-single {
-  background-color: #eee;
+  background-color: #f4f4f4;
   border-radius: 32px;
   margin: 0 16px;
   padding: 0 64px;
